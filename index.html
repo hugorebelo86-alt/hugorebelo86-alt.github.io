@@ -1,22 +1,35 @@
-
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Restaurante Lisboa HTML Page</title>
-      <meta name="description" content="Showcases a Lisbon restaurant with an inviting HTML page featuring location details and a captivating photo of the Alfama area to attract customers." />
-      <meta name="robots" content="noindex, nofollow" />
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-      
-    </head>
-
-    <body>
-      
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-      
-    </body>
-  </html>
-  
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasco do Vigário</title>
+  <style>
+    :root{--orange:#b45700;--text:#6f6f6f;--title:#9a5b24;--border:#ece7e2;--card:#fff;--shadow:0 1px 3px rgba(0,0,0,.06);--radius:6px;}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--text)}
+    .topbar{background:var(--orange);height:68px;color:#fff;display:flex;align-items:center;justify-content:center;position:relative;text-align:center}
+    .brand h1{margin:0;font-size:18px;font-weight:700;line-height:1.1;color:#fff}.brand p{margin:3px 0 0;font-size:9px;opacity:.95}
+    .lang{position:absolute;top:10px;right:10px;background:rgba(120,60,0,.9);color:#fff;border-radius:4px;padding:3px 6px;font-size:10px;line-height:1}
+    .hero{height:120px;background:linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05)),url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;border-bottom:1px solid #f0f0f0}
+    .page{min-height: calc(100vh - 68px - 120px - 44px);display:flex;justify-content:center;padding:18px 16px 22px}.content{width:min(370px,100%)}
+    .intro{margin-bottom:18px}.intro h2{margin:0 0 8px;color:var(--title);font-size:13px;font-weight:700}.intro p{margin:0 0 5px;font-size:8px;line-height:1.5;color:#5e5e5e}
+    .card{background:var(--card);border:1px solid #f1f1f1;border-radius:var(--radius);box-shadow:var(--shadow);padding:12px;margin-bottom:14px}.card h3{margin:0 0 10px;color:var(--title);font-size:12px;font-weight:700}
+    .specials{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.special{border-left:2px solid #d88b2e;padding-left:8px;min-height:48px}.special h4{margin:0 0 5px;font-size:9px;color:#7b4b17}.special p{margin:0;font-size:7px;line-height:1.4;color:#7b7b7b}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.info-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;font-size:8px;line-height:1.4}.icon{width:14px;flex:0 0 14px;text-align:center;color:#cf7b22;font-size:10px;margin-top:1px}.info-item strong{display:block;color:#777;font-size:8px}.info-item span{color:#8a8a8a}
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}label{display:block;font-size:7px;color:#777;margin:0 0 4px}input,textarea{width:100%;border:1px solid #d8d8d8;border-radius:4px;padding:6px 8px;font-size:8px;outline:none;background:#fff}textarea{min-height:64px;resize:vertical}
+    .btn{width:100%;border:none;border-radius:4px;background:var(--orange);color:#fff;padding:7px 12px;font-size:8px;font-weight:700;cursor:pointer}.footer{height:44px;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px;text-align:center}
+    @media (max-width:700px){.hero{height:100px}.specials,.grid-2,form .row{grid-template-columns:1fr}.content{width:100%;max-width:370px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="brand"><h1>Tasco do Vigário</h1><p>Sabores Autênticos de Lisboa</p></div><div class="lang">🌐 EN</div></header>
+  <section class="hero"></section>
+  <main class="page"><div class="content">
+    <section class="intro"><h2>Bem-vindos ao nosso restaurante</h2><p>Localizado no coração histórico de Lisboa, no charmoso bairro da Alfama, o nosso restaurante oferece uma experiência gastronómica única.</p><p>Combinamos receitas tradicionais portuguesas com ingredientes frescos e sabores autênticos da época.</p><p>Venha descobrir os sabores autênticos da cozinha lisboeta num ambiente acolhedor e familiar, onde cada refeição é preparada com paixão e dedicação.</p></section>
+    <section class="card"><h3>As Nossas Especialidades</h3><div class="specials"><div class="special"><h4>Feijoada</h4><p>O tradicional guisado português com feijão, carnes e enchidos.</p></div><div class="special"><h4>Arroz de Marisco</h4><p>Arroz cremoso com uma seleção de mariscos frescos.</p></div><div class="special"><h4>Pastéis de Bacalhau</h4><p>Deliciosos bolinhos de bacalhau fritos, crocantes e saborosos.</p></div></div></section>
+    <section class="grid-2"><div class="card"><h3>Contacto</h3><div class="info-item"><div class="icon">📍</div><div><strong>Rua do Vigário, n.º 18</strong><span>1100-000 Lisboa, Portugal</span></div></div><div class="info-item"><div class="icon">📞</div><div><strong>+351 21 000 XXXX</strong></div></div><div class="info-item"><div class="icon">✉️</div><div><strong>tascodovigario@gmail.com</strong></div></div></div><div class="card"><h3>Horário</h3><div class="info-item"><div class="icon">🕒</div><div><strong>Todos os dias</strong><span>09:00 - 21:00</span></div></div></div></section>
+    <section class="card"><h3>Faça a sua Reserva</h3><form><div class="row"><div><label>Nome</label><input type="text" /></div><div><label>Email</label><input type="email" /></div></div><div class="row"><div><label>Telefone</label><input type="tel" /></div><div><label>Número de Pessoas</label><input type="number" min="1" /></div></div><div class="row"><div><label>Data</label><input type="date" /></div><div><label>Hora</label><input type="time" /></div></div><div style="margin-bottom:8px;"><label>Mensagem (opcional)</label><textarea></textarea></div><button class="btn" type="submit">Reservar Mesa</button></form></section>
+  </div></main>
+  <footer class="footer">© 2026 Tasco do Vigário - Todos os direitos reservados</footer>
+</body>
+</html>
